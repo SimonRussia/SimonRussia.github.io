@@ -1,0 +1,161 @@
+body {
+  color: #2C3E50;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAFA;
+}
+
+header {
+  width: 100%;
+  min-height: 50px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 28pt;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  width: 100%;
+  min-height: 200px;
+  color: white;
+  text-align: right;
+  background: #00458A;
+  border-top: 1px solid #c9c9c9;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  color: white;
+  background-color: #00458A;
+  border-top: 1px solid #c9c9c9;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+article {
+  max-width: 1024px;
+  min-height: 100px;
+  margin: 0 auto;
+}
+
+.wdth {
+  width: 1024px;
+  height: 100%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.item {
+  margin: 30px 10px;
+}
+
+.item:first-child {
+  margin-top: 40px;
+}
+
+.item:last-child {
+  margin-bottom: 40px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 24pt;
+  font-family: 'Underdog', cursive;
+}
+
+a {
+  color: #A569BD;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+article ol {
+  width: 740px;
+}
+
+article li {
+  padding: 10px;
+  border-bottom: 1px solid #D5DBDB;
+}
+
+article li:last-child {
+  border-bottom: 0px;
+}
+
+article li:hover {
+  background-color: #EBF5FB;
+}
+
+.current {
+  background: linear-gradient(45deg, rgba(148,187,233,0.7) 0%, rgba(255,255,255,0) 100%);
+  /* background: linear-gradient(45deg, rgba(238,174,202,0.5) 0%, rgba(148,187,233,0) 100%); */
+}
+
+.done, .done a {
+  color: #D5DBDB;
+}
+.done .progress {
+  background-color: #D5F5E3;
+}
+
+.progress-bar {
+  width: 500px;
+  height: 6px;
+  border-radius: 6px;
+}
+
+.bar {
+  background-color: #D7DBDD;
+  margin: 5px 0px;
+}
+
+.progress {
+  background-color: #A569BD;
+}
+
+
+
+
+.button-bar {
+  display: block;
+  text-align: right;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  width: 100px;
+  color: white;
+  text-align: center;
+  margin-right: -9px;
+  padding: 20px;
+}
+
+.button:hover {
+  color: #A569BD;
+  background-color: white;
+}
+
+
+.links {
+  width: 100%;
+  text-align: left;
+}
+.links ul {
+  list-style: none;
+  margin: 0;
+}
+.links li {
+  border: none;
+  margin: 5px;
+  padding: 5px;
+}
+
+.links a {
+  color: #00b0ff;
+}
