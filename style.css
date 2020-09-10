@@ -10,7 +10,6 @@ a {
 main {
   max-width: 1000px;
   min-width: 280px;
-  /*background-color: burlywood;*/
   padding: 20px;
   margin: 0 auto;
   font-family: sans-serif;
@@ -59,35 +58,13 @@ main {
   margin-bottom: 10px;
 }
 
-.block-contacts li::after {
-  content: '';
-  display: inline-block;
-  width: 30px;
-  height: 30px;
+.block-contacts img {
   margin-left: 10px;
 }
-
-.block-contacts .city::after {
-  background-image: url(https://img.icons8.com/ios-glyphs/30/000000/map-marker.png);
-}
-
-.block-contacts .tel::after {
-  background-image: url(https://img.icons8.com/ios-glyphs/30/000000/iphone.png);
-}
-
-.block-contacts .mail::after {
-  background-image: url(https://img.icons8.com/ios-glyphs/30/000000/email.png);
-}
-
-.block-contacts .github::after {
-  background-image: url(https://img.icons8.com/ios-glyphs/30/000000/github.png);
-}
-
 
 .info-container section {
   padding: 10px;
   margin-bottom: 10px;
-  /*background-color: lightblue;*/
   border-bottom: 1px solid gray;
 }
 
@@ -149,35 +126,6 @@ main {
 
   .block-contacts li {
     font-size: 1.3em;
-  }
-
-  .block-contacts li::after {
-    content: '';
-    display: none;
-  }
-
-  .block-contacts li::before {
-    content: '';
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-
-  .block-contacts .city::before {
-    background-image: url(https://img.icons8.com/ios-glyphs/30/000000/map-marker.png);
-  }
-
-  .block-contacts .tel::before {
-    background-image: url(https://img.icons8.com/ios-glyphs/30/000000/iphone.png);
-  }
-
-  .block-contacts .mail::before {
-    background-image: url(https://img.icons8.com/ios-glyphs/30/000000/email.png);
-  }
-
-  .block-contacts .github::before {
-    background-image: url(https://img.icons8.com/ios-glyphs/30/000000/github.png);
   }
 
 }
