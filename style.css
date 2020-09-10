@@ -1,162 +1,119 @@
 body {
-  color: #2C3E50;
-  font-family: 'Roboto Mono', monospace;
   margin: 0;
   padding: 0;
-  background-color: #FAFAFA;
 }
 
-header {
-  width: 100%;
-  min-height: 50px;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 28pt;
-  text-align: center;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-footer {
-  width: 100%;
-  min-height: 200px;
-  color: white;
-  text-align: right;
-  background: #00458A;
-  border-top: 1px solid #c9c9c9;
-}
-
-nav {
-  width: 100%;
-  height: 60px;
-  color: white;
-  background-color: #00458A;
-  border-top: 1px solid #c9c9c9;
-  border-bottom: 1px solid #c9c9c9;
-}
-
-article {
-  max-width: 1024px;
-  min-height: 100px;
-  margin: 0 auto;
-}
-
-.wdth {
-  width: 1024px;
-  height: 100%;
-  padding: 30px;
-  margin: 0 auto;
-}
-
-.item {
-  margin: 30px 10px;
-}
-
-.item:first-child {
-  margin-top: 40px;
-}
-
-.item:last-child {
-  margin-bottom: 40px;
-}
-
-.name {
-  font-weight: bold;
-  font-size: 24pt;
-  font-family: 'Underdog', cursive;
-}
-
-a {
-  color: #A569BD;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-article ol {
-  width: 740px;
-}
-
-article li {
-  padding: 10px;
-  border-bottom: 1px solid #D5DBDB;
-}
-
-article li:last-child {
-  border-bottom: 0px;
-}
-
-article li:hover {
-  background-color: #EBF5FB;
-}
-
-.current {
-  background: linear-gradient(45deg, rgba(148,187,233,0.7) 0%, rgba(255,255,255,0) 100%);
-  /* background: linear-gradient(45deg, rgba(238,174,202,0.5) 0%, rgba(148,187,233,0) 100%); */
-}
-
-.done, .done a {
-  color: #D5DBDB;
-}
-.done .progress {
-  background-color: #D5F5E3;
-}
-
-.progress-bar {
-  width: 500px;
-  height: 6px;
-  border-radius: 6px;
-}
-
-.bar {
-  background-color: #D7DBDD;
-  margin: 5px 0px;
-}
-
-.progress {
-  background-color: #A569BD;
-}
-
-
-
-
-.button-bar {
-  display: block;
-  text-align: right;
-  width: 1024px;
-  margin: 0 auto;
-}
-
-.button {
-  display: inline-block;
-  width: 100px;
-  color: white;
-  text-align: center;
-  margin-right: -9px;
+main {
+  max-width: 1000px;
+  min-width: 280px;
+  background-color: burlywood;
   padding: 20px;
+  margin: 0 auto;
+  font-family: sans-serif;
 }
 
-.button:hover {
-  color: #A569BD;
-  background-color: white;
+.avatar-container {
+  margin-bottom: 40px;
+  border-bottom: 1px solid gray;
 }
 
-
-.links {
-  width: 100%;
-  text-align: left;
+.block-avatar, .block-contacts {
+  display: inline-block;
+  /*background-color: lightblue;*/
 }
-.links ul {
+
+.block-avatar {
+  width: 30%;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.block-contacts {
+  width: 69%;
+  text-align: right;
+}
+
+.block-contacts ul {
+  padding: 0;
+}
+
+.block-contacts li {
+  font-size: 2em;
   list-style: none;
-  margin: 0;
-}
-.links li {
-  border: none;
-  margin: 5px;
-  padding: 5px;
+  margin-bottom: 10px;
 }
 
-.links a {
-  color: #00b0ff;
+.block-contacts li::after {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.block-contacts .city::after {
+  background-image: url(https://img.icons8.com/fluent/30/000000/map-marker.png);
+}
+
+.block-contacts .tel::after {
+  background-image: url(https://img.icons8.com/fluent/30/000000/phone.png);
+}
+
+.block-contacts .mail::after {
+  background-image: url(https://img.icons8.com/fluent/30/000000/mail.png);
+}
+
+.block-contacts .github::after {
+  background-image: url(https://img.icons8.com/fluent/30/000000/github.png);
+}
+
+
+@media (max-width: 800px) {
+  main {
+    background-color: green;
+  }
+
+  .block-avatar, .block-contacts {
+    width: 99%;
+    text-align: center;
+  }
+
+  .block-avatar {
+    border-bottom: 1px solid gray;
+  }
+
+  .block-contacts li {
+    font-size: 1.3em;
+  }
+
+  .block-contacts li::after {
+    content: '';
+    display: none;
+  }
+
+  .block-contacts li::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .block-contacts .city::before {
+    background-image: url(https://img.icons8.com/fluent/30/000000/map-marker.png);
+  }
+
+  .block-contacts .tel::before {
+    background-image: url(https://img.icons8.com/fluent/30/000000/phone.png);
+  }
+
+  .block-contacts .mail::before {
+    background-image: url(https://img.icons8.com/fluent/30/000000/mail.png);
+  }
+
+  .block-contacts .github::before {
+    background-image: url(https://img.icons8.com/fluent/30/000000/github.png);
+  }
+
 }
