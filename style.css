@@ -28,8 +28,14 @@ main {
 .block-avatar {
   width: 30%;
   text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
+}
+
+.block-avatar img {
+  border: 10px solid;
+  border-top-color: #ff4d4d;
+  border-right-color: #ff0000;
+  border-bottom-color: #990000;
+  border-left-color: #cc0000;
 }
 
 .block-contacts {
@@ -37,12 +43,18 @@ main {
   text-align: right;
 }
 
+.block-contacts span {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 .block-contacts ul {
   padding: 0;
+  margin-top: 30px;
 }
 
 .block-contacts li {
-  font-size: 2em;
+  font-size: 1.5em;
   list-style: none;
   margin-bottom: 10px;
 }
@@ -56,27 +68,21 @@ main {
 }
 
 .block-contacts .city::after {
-  background-image: url(https://img.icons8.com/fluent/30/000000/map-marker.png);
+  background-image: url(https://img.icons8.com/ios-glyphs/30/000000/map-marker.png);
 }
 
 .block-contacts .tel::after {
-  background-image: url(https://img.icons8.com/fluent/30/000000/phone.png);
+  background-image: url(https://img.icons8.com/ios-glyphs/30/000000/iphone.png);
 }
 
 .block-contacts .mail::after {
-  background-image: url(https://img.icons8.com/fluent/30/000000/mail.png);
+  background-image: url(https://img.icons8.com/ios-glyphs/30/000000/email.png);
 }
 
 .block-contacts .github::after {
-  background-image: url(https://img.icons8.com/fluent/30/000000/github.png);
+  background-image: url(https://img.icons8.com/ios-glyphs/30/000000/github.png);
 }
 
-
-
-
-/*.info-container*/
-
-/*.block-title*/
 
 .info-container section {
   padding: 10px;
@@ -111,25 +117,34 @@ main {
 }
 
 .info-container p {
+  line-height: 1.5em;
   padding-left: 40px;
 }
 
 
 
+.info-container section:hover {
+  background-color: #f2f2f2;
+}
+
+.info-container section:hover .block-title {
+  color: red;
+}
 
 
 @media (max-width: 800px) {
-  main {
-    /*background-color: green;*/
-  }
 
   .block-avatar, .block-contacts {
     width: 99%;
     text-align: center;
   }
 
-  .block-avatar {
-    border-bottom: 1px solid gray;
+  .block-contacts {
+    margin-top: 10px;
+  }
+
+  .block-contacts span {
+    font-size: 1.9em;
   }
 
   .block-contacts li {
@@ -150,19 +165,20 @@ main {
   }
 
   .block-contacts .city::before {
-    background-image: url(https://img.icons8.com/fluent/30/000000/map-marker.png);
+    background-image: url(https://img.icons8.com/ios-glyphs/30/000000/map-marker.png);
   }
 
   .block-contacts .tel::before {
-    background-image: url(https://img.icons8.com/fluent/30/000000/phone.png);
+    background-image: url(https://img.icons8.com/ios-glyphs/30/000000/iphone.png);
   }
 
   .block-contacts .mail::before {
-    background-image: url(https://img.icons8.com/fluent/30/000000/mail.png);
+    background-image: url(https://img.icons8.com/ios-glyphs/30/000000/email.png);
   }
 
   .block-contacts .github::before {
-    background-image: url(https://img.icons8.com/fluent/30/000000/github.png);
+    background-image: url(https://img.icons8.com/ios-glyphs/30/000000/github.png);
   }
 
 }
+
