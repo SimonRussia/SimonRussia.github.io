@@ -3,10 +3,14 @@ body {
   padding: 0;
 }
 
+a {
+  color: red;
+}
+
 main {
   max-width: 1000px;
   min-width: 280px;
-  background-color: burlywood;
+  /*background-color: burlywood;*/
   padding: 20px;
   margin: 0 auto;
   font-family: sans-serif;
@@ -19,7 +23,6 @@ main {
 
 .block-avatar, .block-contacts {
   display: inline-block;
-  /*background-color: lightblue;*/
 }
 
 .block-avatar {
@@ -69,9 +72,55 @@ main {
 }
 
 
+
+
+/*.info-container*/
+
+/*.block-title*/
+
+.info-container section {
+  padding: 10px;
+  margin-bottom: 10px;
+  /*background-color: lightblue;*/
+  border-bottom: 1px solid gray;
+}
+
+.info-container section:last-child {
+  border-bottom: none;
+}
+
+.block-title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.info-container span {
+  font-weight: bold;
+}
+
+.mgtu {
+  list-style: none;
+}
+
+.info-container ul {
+  margin-bottom: 20px;
+}
+
+.info-container li {
+  margin-bottom: 10px;
+}
+
+.info-container p {
+  padding-left: 40px;
+}
+
+
+
+
+
 @media (max-width: 800px) {
   main {
-    background-color: green;
+    /*background-color: green;*/
   }
 
   .block-avatar, .block-contacts {
